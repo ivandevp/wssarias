@@ -47,7 +47,6 @@ function App() {
                 im.addClass('ww');
             }
            
-           console.log("th", th);
             var nh = im.height(),
                 nw = im.width(),
                 hd =  Math.floor((nh-th)/2),
@@ -104,7 +103,7 @@ function App() {
 */
     }
 
-var im = $('#bg');     
+var im = $('#img1');     
 
 $(function(){
 
@@ -112,7 +111,6 @@ $(function(){
         App();
         $('#main').css('opacity', '1');
     });
-
 });
 
 
@@ -145,3 +143,17 @@ window.addEventListener("orientationchange", function() {
 
 }, false);
 
+$(document).ready(function() {
+    var isColombia = false;
+    setInterval(function() {
+        $("#img1").fadeToggle();
+        $("#img2").fadeToggle();
+        if (isColombia) {
+            $("body").css("background-image", "url('img/background_PSV.jpg')");
+            isColombia = false;
+        } else {
+            $("body").css("background-image", "url('img/background_Colombia.jpg')");
+            isColombia = true;
+        }
+    }, 3000);
+})
