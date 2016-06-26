@@ -57,7 +57,7 @@ function App() {
                 //console.log(hd);
 
             if (im.hasClass('wh')) {
-                console.log(wd);
+                // console.log(wd);
                 im.css('marginLeft', '-'+wd+'px');
             }else{
                 im.css('margin', '0');
@@ -68,7 +68,7 @@ function App() {
                 height: Math.floor((13*nh)/100)
             });
 
-            console.log($('.content-social').css('width'));
+            // console.log($('.content-social').css('width'));
 
             
 
@@ -86,13 +86,13 @@ function App() {
 
             getImageSize($('#logos').children(), function(width, height){
 
-                $('#logos').css({
-                    height:  Math.floor((7*nh)/100) ,
-                    //height: (tw <= 800) ? Math.floor((5*nh)/100) : Math.floor((7*nh)/100) ,
-                    bottom: gutter
-                });
+            // $('#logos').css({
+            //     height:  Math.floor((7*nh)/100) ,
+            //     //height: (tw <= 800) ? Math.floor((5*nh)/100) : Math.floor((7*nh)/100) ,
+            //     bottom: gutter
+            // });
 
-                $('#logos').children().css('height', $('#logos').height());
+            // $('#logos').children().css('height', $('#logos').height());
 
             });
 
@@ -143,7 +143,7 @@ window.addEventListener("orientationchange", function() {
 
 }, false);
 
-$(document).ready(function() {
+$(window).load(function() {
     var isColombia = false;
     setInterval(function() {
         $("#img1").fadeToggle();
