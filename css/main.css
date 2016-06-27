@@ -275,7 +275,7 @@ img{
         /* height: 45%; */
         margin: 0;
         position: absolute;
-        right: 1%;
+        right: -1%;
         padding-right: 0;
         bottom: 5px;
         display: block;
@@ -284,6 +284,7 @@ img{
         font-size: 1.6vh;
         line-height: 2.0vh;
         bottom: -35px;
+        width: 100% !important;
     }
 
     .content-social{
@@ -310,6 +311,7 @@ img{
         display: block;
         padding-top: 0;
         padding-bottom: 0;
+        height: 18px;
     }
     
     .player{
