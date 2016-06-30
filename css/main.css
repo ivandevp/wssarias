@@ -141,12 +141,13 @@ html, body{
     color:#ffffff;
     font-family: 'Amaranth';
     font-weight: 400;
-    padding-right: 7%;
+    padding-left: 15px;
+    padding-right: 20px;
     display: table-cell;
     vertical-align: middle;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    width: 90%;
+    width: 100%;
 }
 
 .content-text a{
@@ -187,7 +188,7 @@ html, body{
 }
 
 .content-social a img{
-    height: 100%;
+    height: 45px;
     width: auto;
     display: block;
 }
@@ -258,6 +259,11 @@ html, body{
     #logos {
         height: 10% !important;
     }
+    .content-social a img{
+        height: 100%;
+        width: auto;
+        display: block;
+    }
 }
 
 
@@ -267,7 +273,7 @@ html, body{
         /* height: 45%; */
         margin: 0;
         position: absolute;
-        right: -1%;
+        right: 10%;
         padding-right: 0;
         bottom: 5px;
         display: block;
@@ -298,6 +304,12 @@ html, body{
         height: 100%;
         margin-top: 0;
     }
+    
+    .content-social a img{
+        height: 100%;
+        width: auto;
+        display: block;
+    }
 
     .content-text p {
         display: block;
@@ -308,7 +320,7 @@ html, body{
     
     .player{
         left: -26%;
-        max-height: 90% !important;
+        max-height: 93% !important;
         bottom: 0 !important;
         top: initial;
     }
@@ -323,27 +335,37 @@ html, body{
     }
     #instagram{
         padding: 0;
-        margin: 0 2%;
+        margin: 0 3% 0 2%;
     }
     #logos{
         bottom: 9%;
     }
-}
-
-@media (min-width: 700px) and (max-width: 800px){
-    #logos {
-        height: 10% !important;
+    #content{
+        height: 12% !important;
+        top: 18%;
     }
 }
 
+@media only screen and (width: 736px) and (orientation: landscape){
+    .player{
+        left: 10% !important;
+    }
+    #instagram{
+        margin: 0 20% 0 1% !important;
+    }
+    .content-text {
+        right: 12% !important;
+        bottom: -25px !important;
+    }
+}    
 
-@media (min-width: 700px) and (max-width: 800px){
+@media (min-width: 700px) and (max-width: 850px){
     .content-text{
         float: none;
         /* height: 45%; */
         margin: 0;
         position: absolute;
-        right: -1%;
+        right: 10%;
         padding-right: 0;
         bottom: 5px;
         display: block;
@@ -384,9 +406,14 @@ html, body{
     
     .player{
         left: -15%;
-        max-height: 95% !important;
+        max-height: 91% !important;
         bottom: 0 !important;
         top: initial;
+    }
+    .content-social a img{
+        height: 100%;
+        width: auto;
+        display: block;
     }
     #twitter{
         padding: 0;
@@ -404,14 +431,22 @@ html, body{
     #logos{
         bottom: 9%;
     }
+    #content{
+        top: 20%;
+    }
 }
 
-@media (min-width: 801px) and (max-width: 1100px) {
+@media (min-width: 851px) and (max-width: 1100px) {
     #instagram{
         margin-right: 12%;
     }  
     .player{
         left: 2%;
+    }
+    .content-social a img{
+        height: 100%;
+        width: auto;
+        display: block;
     }
 }  
 
