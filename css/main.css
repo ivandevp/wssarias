@@ -264,6 +264,10 @@ html, body{
         width: auto;
         display: block;
     }
+    #content {
+        height: 14% !important;
+        top: 17%;
+    }
 }
 
 
@@ -287,13 +291,15 @@ html, body{
 
     .content-social{
         float: none;
-        height: 45%;
+        height: 50%;
         position: absolute;
         top: 5px;
         width: 100%;
         right: 0;
         margin: 0;
         text-align: right;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
     }
 
     .content-social a {
@@ -341,8 +347,8 @@ html, body{
         bottom: 9%;
     }
     #content{
-        height: 12% !important;
-        top: 18%;
+        height: 14% !important;
+        top: 17%;
     }
 }
 
@@ -356,6 +362,10 @@ html, body{
     .content-text {
         right: 12% !important;
         bottom: -25px !important;
+    }
+    #content {
+        height: 14% !important;
+        top: 17%;
     }
 }    
 
@@ -433,7 +443,9 @@ html, body{
     }
     #content{
         top: 20%;
+        height: 14% !important;
     }
+    
 }
 
 @media (min-width: 851px) and (max-width: 1100px) {
